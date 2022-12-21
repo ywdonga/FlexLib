@@ -913,6 +913,26 @@ void FlexApplyLayoutParam(YGLayout* layout,
     NSString* sFilePath = [FlexNode getResCachePath:flexName];
     [NSKeyedArchiver archiveRootObject:node toFile:sFilePath];
 }
+
+#pragma mark - XD
+- (NSString *)viewClassName{
+    NSString *clsName = [[FlexNode conversionDict] objectForKey: _viewClassName];
+    return (clsName.length > 0) ? clsName : _viewClassName;
+}
+
++ (NSDictionary<NSString *, NSString *> *)conversionDict{
+    static dispatch_once_t onceToken;
+    static NSDictionary * mapDict;
+    dispatch_once(&onceToken, ^{
+        mapDict = @{
+            @"div": @"UIView",
+            @"span": @"UILabel",
+            @"img": @"UIImageView"
+        };
+    });
+    return mapDict;
+}
+
 @end
 
 #pragma mark - Global Functions
