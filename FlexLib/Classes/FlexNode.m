@@ -18,6 +18,7 @@
 #import "FlexModalView.h"
 #import "FlexExpression.h"
 #import "ViewExt/UIView+Flex.h"
+#import "FlexConfig.h"
 
 #define VIEWCLSNAME     @"viewClsName"
 #define NAME            @"name"
@@ -746,6 +747,17 @@ void FlexApplyLayoutParam(YGLayout* layout,
         node.viewAttrs = [FlexNode parseStringParams:param];
     }
     
+    // user style
+    if (!layout || !attr) {
+        FlexStyleModel *styleModel = [FlexConfig styleWithElm: element];
+        if (!layout) {
+            node.layoutParams = styleModel.layoutParams;
+        }
+        if (!attr) {
+            node.viewAttrs = styleModel.viewAttrs;
+        }
+    }
+    
     // children
     NSArray* children = [element children];
     if( children.count > 0 ){
@@ -914,23 +926,10 @@ void FlexApplyLayoutParam(YGLayout* layout,
     [NSKeyedArchiver archiveRootObject:node toFile:sFilePath];
 }
 
-#pragma mark - XD
+#pragma mark - XDXD
+/// 重写git方法，将html标签映射到指定的类
 - (NSString *)viewClassName{
-    NSString *clsName = [[FlexNode conversionDict] objectForKey: _viewClassName];
-    return (clsName.length > 0) ? clsName : _viewClassName;
-}
-
-+ (NSDictionary<NSString *, NSString *> *)conversionDict{
-    static dispatch_once_t onceToken;
-    static NSDictionary * mapDict;
-    dispatch_once(&onceToken, ^{
-        mapDict = @{
-            @"div": @"UIView",
-            @"span": @"UILabel",
-            @"img": @"UIImageView"
-        };
-    });
-    return mapDict;
+    return [FlexConfig findClass:_viewClassName];
 }
 
 @end

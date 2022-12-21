@@ -1,86 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <div
-    layout="
+    style="
     flex:1,
     justifyContent:center,
-    alignItems:center"
-    attr="bgColor:white">
-    <div layout="height:1,width:100%" attr="bgColor:red"/>
-    <FlexScrollView name="_scroll" layout="flex:1,width:100%,alignItems:center" attr="vertScroll:true">
-        <span name="_label" layout="marginTop:20"
-        attr="@:system/buttonText,text:You can run on iPhoneX,color:blue"/>
+    alignItems:center,bgColor:white">
+    <div style="height:1,width:100%,bgColor:red"/>
+    <FlexScrollView name="_scroll" style="flex:1,width:100%,alignItems:center,vertScroll:true">
+        <span name="_label" style="marginTop:20,@:system/buttonText,text:You can run on iPhoneX,color:blue"/>
         
-        <span name="_label" layout="marginTop:20"
-        attr="@:system/buttonText,text:@multilangdemo,linesNum:0,color:blue"/>
+        <span name="_label" style="marginTop:20,@:system/buttonText,text:@multilangdemo,linesNum:0,color:blue"/>
         
-        <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-            <FlexTouchView onPress="onControls" layout="@:system/button" attr="@:system/buttonAttr">
+        <div style="width:100%,flexDirection:row,justifyContent:space-around">
+            <FlexTouchView onPress="onControls" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:Controls"/>
+                style="@:system/buttonText,text:Controls"/>
             </FlexTouchView>
-            <FlexTouchView onPress="onTestTable" layout="@:system/button" attr="@:system/buttonAttr">
+            <FlexTouchView onPress="onTestTable" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:TableView"/>
+                style="@:system/buttonText,text:TableView"/>
             </FlexTouchView>
         </div>
-        <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-            <FlexTouchView onPress="onTestScrollView:" layout="@:system/button" attr="@:system/buttonAttr">
+        <div style="width:100%,flexDirection:row,justifyContent:space-around">
+            <FlexTouchView onPress="onTestScrollView:" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:ScrollView"/>
+                style="@:system/buttonText,text:ScrollView"/>
             </FlexTouchView>
-            <FlexTouchView onPress="onTestModalView" layout="@:system/button" attr="@:system/buttonAttr">
+            <FlexTouchView onPress="onTestModalView" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:ModalView"/>
+                style="@:system/buttonText,text:ModalView"/>
             </FlexTouchView>
         </div>
 
-        <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-            <FlexTouchView onPress="onTestLoginView" layout="@:system/button" attr="@:system/buttonAttr">
+        <div style="width:100%,flexDirection:row,justifyContent:space-around">
+            <FlexTouchView onPress="onTestLoginView" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:FlexTouchView"/>
+                style="@:system/buttonText,text:FlexTouchView"/>
             </FlexTouchView>
-            <FlexTouchView onPress="onjustifyContent" layout="@:system/button" attr="@:system/buttonAttr">
+            <FlexTouchView onPress="onjustifyContent" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:justifyContent"/>
+                style="@:system/buttonText,text:justifyContent"/>
             </FlexTouchView>
         </div>
 
-       <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-            <FlexTouchView onPress="onTextView" layout="@:system/button" attr="@:system/buttonAttr">
+       <div style="width:100%,flexDirection:row,justifyContent:space-around">
+            <FlexTouchView onPress="onTextView" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:Forms"/>
+                style="@:system/buttonText,text:Forms"/>
             </FlexTouchView>
-            <FlexTouchView onPress="onViewLayouts" layout="@:system/button" attr="@:system/buttonAttr">
+            <FlexTouchView onPress="onViewstyles" style="@:system/button,@:system/buttonAttr">
                 <span
-                attr="@:system/buttonText,text:Layouts"/>
+                style="@:system/buttonText,text:Layouts"/>
             </FlexTouchView>
         </div>
        
-       <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-           <FlexTouchView onPress="onFrameVC" layout="@:system/button" attr="@:system/buttonAttr">
+       <div style="width:100%,flexDirection:row,justifyContent:space-around">
+           <FlexTouchView onPress="onFrameVC" style="@:system/button,@:system/buttonAttr">
                <span
-               attr="@:system/buttonText,text:FrameVC"/>
+               style="@:system/buttonText,text:FrameVC"/>
            </FlexTouchView>
-           <FlexTouchView onPress="onExplorerFlex" layout="@:system/button" attr="@:system/buttonAttr">
+           <FlexTouchView onPress="onExplorerFlex" style="@:system/button,@:system/buttonAttr">
                <span
-               attr="@:system/buttonText,text:Online Flex Explorer"/>
+               style="@:system/buttonText,text:Online Flex Explorer"/>
            </FlexTouchView>
        </div>
        
-       <div layout="width:100%,flexDirection:row,justifyContent:space-around">
-           <FlexTouchView onPress="onFrameView" layout="@:system/button" attr="@:system/buttonAttr">
+       <div style="width:100%,flexDirection:row,justifyContent:space-around">
+           <FlexTouchView onPress="onFrameView" style="@:system/button,@:system/buttonAttr">
                <span
-               attr="@:system/buttonText,text:FrameView"/>
+               style="@:system/buttonText,text:FrameView"/>
            </FlexTouchView>
-           <FlexTouchView onPress="onFrameView" layout="@:system/button" attr="@:system/buttonAttr,alpha:0,userInteractionEnabled:false">
+           <FlexTouchView onPress="onFrameView" style="@:system/button,@:system/buttonAttr,alpha:0,userInteractionEnabled:false">
                <span
-               attr="@:system/buttonText,text:FrameView"/>
+               style="@:system/buttonText,text:FrameView"/>
            </FlexTouchView>
        </div>
 
-       <div layout="$width:ScreenWidth*0.6,height:50,alignItems:center,justifyContent:center" attr="bgColor:#e5e5e5,borderRadius:6">
+       <div style="$width:ScreenWidth*0.6,height:50,alignItems:center,justifyContent:center,bgColor:#e5e5e5,borderRadius:6">
             <span
-               attr="@:system/buttonText,text:表达式计算，屏幕宽度的60%"/>
+            style="@:system/buttonText,text:表达式计算，屏幕宽度的60%"/>
        </div>
     </FlexScrollView>
 </div>

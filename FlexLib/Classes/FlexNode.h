@@ -120,7 +120,7 @@ FlexMapColor FlexGetMapColor(void);
 
 -(UIView*)buildViewTree:(NSObject*)owner
                RootView:(FlexRootView*)rootView;
-
++(NSArray*)parseStringParams:(NSString*)param;
 @end
 
 @interface NSObject (Flex)

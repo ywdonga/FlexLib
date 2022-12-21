@@ -31,6 +31,9 @@
 -(BOOL)isValid{
     return self.name.length>0 && self.value.length>0;
 }
+- (BOOL)isLayout{
+    return YES;
+}
 @end
 
 /////////////////////////////
