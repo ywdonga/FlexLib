@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div style="display: flex;flex-direction: column;background-color: #FFFF00;">
+    <div style="display: flex;flex-direction: column;width: 200px;border-radius: 6px;background-color: #FFFFFF;">
+      <img style="height: 110px;object-fit: cover;border-top-left-radius: 6px;border-top-right-radius: 6px;" src="https://image3.kfangcdn.com/prod/survey/e0dcaf63f53b43ca80f539edc92b6b47.jpg-f800x600w"/>
+      <span style="font-size: 15px;color: #0D171A;font-weight: bold;text-overflow: ellipsis;max-lines: 2;margin: 5px;">大冲城市花园 无税费 临近地铁</span>
+      <div style="display: flex;flex-direction: row;margin-left: 5px;margin-right: 5px;">
+        <span style="font-size: 11px;color: #0D171A;">2室1厅</span><span style="font-size: 11px;color: #0D171A;"> | </span>
+        <span style="font-size: 11px;color: #0D171A;">82.5㎡</span><span style="font-size: 11px;color: #0D171A;"> | </span>
+        <span style="font-size: 11px;color: #0D171A;">精装修</span><span style="font-size: 11px;color: #0D171A;"> | </span>
+        <span style="font-size: 11px;color: #0D171A;">低层/29层</span><span style="font-size: 11px;color: #0D171A;"> | </span>
+        <span style="font-size: 11px;color: #0D171A;">南</span>
+      </div>
+      <span style="font-size: 11px;color: #0D171A; margin-left: 5px;margin-right: 5px;margin-top: 2px;">区域-商圈 (所属小区)</span>
+      <div style="display: flex;flex-direction: row;align-items: center;margin-left: 5px;margin-right: 5px;margin-top: 2px;">
+        <span style="font-size: 16px;color: #FF5050;">3600</span><span style="font-size: 11px;color: #FF5050;">元/月</span>
+      </div>
+    </div>
+</div>
+

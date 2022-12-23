@@ -16,8 +16,8 @@ class ViewController: FlexBaseVC {
     
     @objc var _scroll : UIScrollView?
     @objc var _label : UILabel?;
-    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -79,5 +79,9 @@ class ViewController: FlexBaseVC {
         self.view.addSubview(view!)
     }
     
+    @objc func onCardView()-> Void {
+        let vc = CardViewVC.init(flexName: "CardViewVC");
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 

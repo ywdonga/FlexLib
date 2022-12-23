@@ -13,14 +13,18 @@
 #import "../FlexUtils.h"
 #import "../FlexNode.h"
 #import <objc/runtime.h>
-
+#import <SDWebImage/SDWebImage.h>
 
 @implementation UIImageView (Flex)
 
 FLEXSET(source)
 {
-    UIImage* img = [UIImage imageNamed:sValue inBundle:[owner bundleForImages] compatibleWithTraitCollection:nil];
-    self.image = img ;
+    if([sValue hasPrefix:@"https://"] || [sValue hasPrefix:@"http://"]) {
+        [self sd_setImageWithURL:[NSURL URLWithString:sValue]];
+    } else {
+        UIImage* img = [UIImage imageNamed:sValue inBundle:[owner bundleForImages] compatibleWithTraitCollection:nil];
+        self.image = img ;
+    }
 }
 FLEXSET(highlightSource)
 {

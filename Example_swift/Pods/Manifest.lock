@@ -5,9 +5,14 @@ PODS:
     - FlexLib/standard
   - FlexLib/standard (3.1.5):
     - FlexLib/standard/no-arc (= 3.1.5)
+    - SDWebImage (= 5.14.2)
     - Yoga (= 1.14.0)
   - FlexLib/standard/no-arc (3.1.5):
+    - SDWebImage (= 5.14.2)
     - Yoga (= 1.14.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -17,6 +22,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - SDWebImage
     - Yoga
 
 EXTERNAL SOURCES:
@@ -24,7 +30,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlexLib: fa2213bca02c12588c0acdc92d76a682c0b1db50
+  FlexLib: f55aeb12d7f019389531fa3ec38e7706afcba555
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
 
 PODFILE CHECKSUM: 4ac29cc7fc8f093e3bab9dae20351ed9692977e1

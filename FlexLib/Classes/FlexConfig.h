@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取StyleModel
 + (FlexStyleModel *)styleWithElm:(GDataXMLElement *)element;
 
+/// 查找对应的样式和布局key
++ (NSString *)findStyleKey:(NSString *)key;
+/// 查找对应的样式和布局Value
++ (NSString *)findStyleValue:(NSString *)value;
+
 @end
 
 NS_ASSUME_NONNULL_END

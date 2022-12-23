@@ -15,6 +15,9 @@
 
 static const void *kFlexViewAttrAssociatedKey = &kFlexViewAttrAssociatedKey;
 
+//保存圆角属性
+static NSString * const kXDCornerRadiusKey = @"kXDCornerRadiusKey";
+
 @implementation FlexViewAttrs
 
 @end
@@ -327,6 +330,25 @@ FLEXSETBOOL(clearsContextBeforeDrawing)
 FLEXSET(value)
 {
     NSLog(@"%@ not implement value property, UIView.value should not be called.",self.class);
+}
+
+FLEXSET(borderTopLeftRadius)
+{
+    self.layer.cornerRadius = [sValue floatValue];
+}
+
+FLEXSET(borderTopRightRadius){
+    self.layer.cornerRadius = [sValue floatValue];
+}
+
+/// 获取四个圆角的大小，顺时针
+- (NSArray<NSNumber *> *)hg_cornerRadius{
+    return objc_getAssociatedObject(self, &kXDCornerRadiusKey)?:@[@0, @0, @0, @0];
+}
+
+/// 设置四个圆角的大小，顺时针
+- (void)setXDRadius:(NSArray<NSNumber *> *)radius{
+    objc_setAssociatedObject(self, &kXDCornerRadiusKey, radius, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

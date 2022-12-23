@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		589E223C2953F8CF009F25CB /* CardViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E223B2953F8CF009F25CB /* CardViewVC.swift */; };
 		96BD46A14DFF90B48262F30F /* Pods_FlexSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1128F142210C595EFCAA18 /* Pods_FlexSwiftDemo.framework */; };
 		D24F2EC51FF72D1900762ADC /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24F2EC41FF72D1900762ADC /* AttachmentView.swift */; };
 		D272B78B1FEF6770004447E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D272B78D1FEF6770004447E2 /* Localizable.strings */; };
@@ -31,7 +32,7 @@
 		D2D0209B1FEBB289008F6DB6 /* batchcheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D020881FEBB288008F6DB6 /* batchcheck@2x.png */; };
 		D2D0209C1FEBB289008F6DB6 /* TestTableCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = D2D020891FEBB288008F6DB6 /* TestTableCell.xml */; };
 		D2D0209D1FEBB289008F6DB6 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208A1FEBB288008F6DB6 /* arrow_right@2x.png */; };
-		D2D0209E1FEBB289008F6DB6 /* TextViewVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208B1FEBB288008F6DB6 /* TextViewVC.xml */; };
+		D2D0209E1FEBB289008F6DB6 /* CardViewVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208B1FEBB288008F6DB6 /* CardViewVC.xml */; };
 		D2D0209F1FEBB289008F6DB6 /* addnewtype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208C1FEBB288008F6DB6 /* addnewtype@2x.png */; };
 		D2D020A01FEBB289008F6DB6 /* justifyContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208D1FEBB288008F6DB6 /* justifyContent.xml */; };
 		D2D020A11FEBB289008F6DB6 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D0208E1FEBB288008F6DB6 /* qrcode.png */; };
@@ -57,6 +58,8 @@
 		031350CFF12F685D7428A932 /* Pods-FlexSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexSwiftDemo/Pods-FlexSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1128F142210C595EFCAA18 /* Pods_FlexSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3113DD79A226E231CFABE7FC /* Pods-FlexSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexSwiftDemo/Pods-FlexSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		589E223A2953F89C009F25CB /* TextViewVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TextViewVC.xml; sourceTree = "<group>"; };
+		589E223B2953F8CF009F25CB /* CardViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewVC.swift; sourceTree = "<group>"; };
 		D24F2EC41FF72D1900762ADC /* AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentView.swift; sourceTree = "<group>"; };
 		D272B7821FEF4BC3004447E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D272B78C1FEF6770004447E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -84,7 +87,7 @@
 		D2D020881FEBB288008F6DB6 /* batchcheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "batchcheck@2x.png"; path = "FlexSwiftDemo/res/batchcheck@2x.png"; sourceTree = SOURCE_ROOT; };
 		D2D020891FEBB288008F6DB6 /* TestTableCell.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TestTableCell.xml; path = FlexSwiftDemo/res/TestTableCell.xml; sourceTree = SOURCE_ROOT; };
 		D2D0208A1FEBB288008F6DB6 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_right@2x.png"; path = "FlexSwiftDemo/res/arrow_right@2x.png"; sourceTree = SOURCE_ROOT; };
-		D2D0208B1FEBB288008F6DB6 /* TextViewVC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TextViewVC.xml; path = FlexSwiftDemo/res/TextViewVC.xml; sourceTree = SOURCE_ROOT; };
+		D2D0208B1FEBB288008F6DB6 /* CardViewVC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CardViewVC.xml; path = FlexSwiftDemo/res/CardViewVC.xml; sourceTree = SOURCE_ROOT; };
 		D2D0208C1FEBB288008F6DB6 /* addnewtype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "addnewtype@2x.png"; path = "FlexSwiftDemo/res/addnewtype@2x.png"; sourceTree = SOURCE_ROOT; };
 		D2D0208D1FEBB288008F6DB6 /* justifyContent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = justifyContent.xml; path = FlexSwiftDemo/res/justifyContent.xml; sourceTree = SOURCE_ROOT; };
 		D2D0208E1FEBB288008F6DB6 /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qrcode.png; path = FlexSwiftDemo/res/qrcode.png; sourceTree = SOURCE_ROOT; };
@@ -162,6 +165,7 @@
 				D2D020701FEBA946008F6DB6 /* Assets.xcassets */,
 				D2D020721FEBA946008F6DB6 /* LaunchScreen.storyboard */,
 				D2D020751FEBA946008F6DB6 /* Info.plist */,
+				589E223B2953F8CF009F25CB /* CardViewVC.swift */,
 				D24F2EC41FF72D1900762ADC /* AttachmentView.swift */,
 				D2E8049920280DAD00B54656 /* FrameVC.swift */,
 				D2D020A71FEBB30B008F6DB6 /* TestVC.swift */,
@@ -207,7 +211,8 @@
 				D2D020851FEBB287008F6DB6 /* TestScrollVC.xml */,
 				D2D020891FEBB288008F6DB6 /* TestTableCell.xml */,
 				D2D020921FEBB288008F6DB6 /* TestTableVC.xml */,
-				D2D0208B1FEBB288008F6DB6 /* TextViewVC.xml */,
+				589E223A2953F89C009F25CB /* TextViewVC.xml */,
+				D2D0208B1FEBB288008F6DB6 /* CardViewVC.xml */,
 			);
 			name = res;
 			path = "New Group";
@@ -280,7 +285,7 @@
 				D29D0D63221BF14400DE5543 /* AttachmentView.xml in Resources */,
 				D2D020951FEBB289008F6DB6 /* example1.jpg in Resources */,
 				D2D0209B1FEBB289008F6DB6 /* batchcheck@2x.png in Resources */,
-				D2D0209E1FEBB289008F6DB6 /* TextViewVC.xml in Resources */,
+				D2D0209E1FEBB289008F6DB6 /* CardViewVC.xml in Resources */,
 				D2D020991FEBB289008F6DB6 /* alignItems.xml in Resources */,
 				D2D020A41FEBB289008F6DB6 /* system.style in Resources */,
 				D29D0D61221BF14400DE5543 /* TableHeader.xml in Resources */,
@@ -317,11 +322,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlexSwiftDemo/Pods-FlexSwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexLib/FlexLib.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +370,7 @@
 				D2D020B41FEC9B53008F6DB6 /* TestJustifycontentVC.swift in Sources */,
 				D2D0206C1FEBA946008F6DB6 /* ViewController.swift in Sources */,
 				D2D020AA1FEBD24D008F6DB6 /* TestScrollVC.swift in Sources */,
+				589E223C2953F8CF009F25CB /* CardViewVC.swift in Sources */,
 				D24F2EC51FF72D1900762ADC /* AttachmentView.swift in Sources */,
 				D2D020AC1FEC99D5008F6DB6 /* TestTableVC.swift in Sources */,
 				D2D020B01FEC9B12008F6DB6 /* TestTouchVC.swift in Sources */,

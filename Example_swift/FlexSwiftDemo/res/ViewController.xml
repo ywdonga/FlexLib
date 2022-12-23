@@ -47,7 +47,7 @@
                 <span
                 style="@:system/buttonText,text:Forms"/>
             </FlexTouchView>
-            <FlexTouchView onPress="onViewstyles" style="@:system/button,@:system/buttonAttr">
+            <FlexTouchView onPress="onViewLayouts" style="@:system/button,@:system/buttonAttr">
                 <span
                 style="@:system/buttonText,text:Layouts"/>
             </FlexTouchView>
@@ -69,9 +69,9 @@
                <span
                style="@:system/buttonText,text:FrameView"/>
            </FlexTouchView>
-           <FlexTouchView onPress="onFrameView" style="@:system/button,@:system/buttonAttr,alpha:0,userInteractionEnabled:false">
+           <FlexTouchView onPress="onCardView" style="@:system/button,@:system/buttonAttr">
                <span
-               style="@:system/buttonText,text:FrameView"/>
+               style="@:system/buttonText,text:CardView"/>
            </FlexTouchView>
        </div>
 

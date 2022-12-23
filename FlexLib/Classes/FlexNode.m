@@ -618,7 +618,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
         
         for(e=s;e<str.length;e++){
             unichar c = [str characterAtIndex:e];
-            if(c==',')
+            if(c==',' || c==';')
                 break;
             if(c=='\\')
                e++;
@@ -687,12 +687,19 @@ void FlexApplyLayoutParam(YGLayout* layout,
         if(range.length == 0)
             continue;
         
-        NSString* s1 = [part substringToIndex:range.location];
-        NSString* s2 = [part substringFromIndex:range.location+1];
-        
+        NSString* s1 = [[part substringToIndex:range.location] stringByTrimmingCharactersInSet:whiteSet];
+        NSString* s2 = [[part substringFromIndex:range.location+1] stringByTrimmingCharactersInSet:whiteSet];
+        NSString *htmlKey = [FlexConfig findStyleKey:s1];
+        NSString *htmlValue = [FlexConfig findStyleValue:s2];
+        if(htmlKey.length > 0){
+            s1 = htmlKey;
+        }
+        if(htmlValue.length > 0){
+            s2 = htmlValue;
+        }
         FlexAttr* attr = [[FlexAttr alloc]init];
-        attr.name = [s1 stringByTrimmingCharactersInSet:whiteSet];
-        attr.value = [s2 stringByTrimmingCharactersInSet:whiteSet];
+        attr.name = s1;
+        attr.value = s2;
         attr.value = [FlexNode transString:attr.value];
         
         if(attr.isValid){

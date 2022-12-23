@@ -26,7 +26,7 @@ It's a layout framework based on yoga engine. The main purpose is to provide eas
   s.author           = { '798393829@qq.com' => '798393829@qq.com' }
   s.source           = { :git => 'https://github.com/zhenglibao/FlexLib.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   s.default_subspec = 'standard'
   
   s.subspec 'standard' do |ss|
@@ -36,6 +36,7 @@ It's a layout framework based on yoga engine. The main purpose is to provide eas
     }
   
     ss.dependency 'Yoga', '1.14.0'
+    ss.dependency 'SDWebImage', '5.14.2'
     ss.library = 'xml2', 'c++'
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2' }
     #s.private_header_files = 'FlexLib/Classes/private/*.h'
